@@ -1,0 +1,294 @@
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        /* CSS Styles for Navigation */
+        .nav-container {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content li {
+            padding: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* CSS Styles for Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            /* Adjust the height as needed */
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('1.jpg');
+            /* Replace 'background-image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.7);
+            /* Adjust the brightness as needed */
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Standard */
+            -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, iOS Safari */
+            -moz-transform: translate(-50%, -50%); /* Firefox */
+            -ms-transform: translate(-50%, -50%); /* Internet Explorer */
+            -o-transform: translate(-50%, -50%); /* Opera */
+            text-align: center;
+            color: #fdfafa; /* Text color */
+        }
+        
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            /* Button background color */
+            color: #fff;
+            /* Button text color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e6b800;
+            /* Hover background color */
+        }
+
+        /* CSS Styles for Card Component */
+        .specialties {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .cards-container {
+            display: flex; /* Modern browsers */
+            display: -webkit-box; /* Safari, iOS Safari */
+            display: -moz-box; /* Firefox (deprecated) */
+            display: -ms-flexbox; /* Internet Explorer */
+            display: -webkit-flex; /* Older versions of Chrome */
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            /* Set the height of the image */
+            object-fit: cover;
+            /* Ensure the image covers the entire container */
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .card-button {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card-button:hover {
+            background-color: #e6b800;
+        }
+
+
+        /* Custom CSS for form elements */
+        .review-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .review-form input[type="text"],
+        .review-form textarea,
+        .review-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .review-form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .review-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .review-form label {
+            font-weight: bold;
+        }
+
+        /* Box to display reviews */
+        .review-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #e4dcdc;
+        }
+
+        .review {
+            margin-bottom: 20px;
+        }
+
+        .review .name {
+            font-weight: bold;
+        }
+
+        .review .rating {
+            color: #f5b042;
+            /* Color for star icons */
+        }
+
+        /* Custom CSS for footer */
+        .footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            /* Align text in the center */
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: center;
+            /* Center the container horizontally */
+            align-items: center;
+            /* Center the container vertically */
+        }
+
+        .footer-left {
+            width: auto;
+            /* Adjust width as needed */
+            text-align: center;
+        }
+
+        .footer-right {
+            width: auto;
+            /* Adjust width as needed */
+            display: flex;
+            justify-content: center;
+            /* Center social icons horizontally */
+            align-items: center;
+            /* Center social icons vertically */
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .social-icons li:first-child {
+            margin-left: 0;
+        }
+
+        .social-icons img {
+            width: 30px;
+            /* Adjust size as needed */
+            height: 30px;
+            /* Adjust size as needed */
+        }
